@@ -1,1 +1,1 @@
-# anti-js-js.club
+# Anti-JavaScript JavaScript Club
