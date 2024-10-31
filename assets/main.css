@@ -1,0 +1,110 @@
+:root {
+  --backgroundColor: #fdfdfd;
+  --textColor: #303030;
+  --secondaryTextColor: #404040;
+  --mutedTextColor: #707070;
+  --subtleBackgroundColor: #f0eeed;
+  --linkColor: #0463cb;
+  --borderColor: #ccc;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --backgroundColor: #151615;
+    --textColor: #dbdfdf;
+    --secondaryTextColor: #cfd5d5;
+    --mutedTextColor: #b4b6b8;
+    --subtleBackgroundColor: #1e1e1e;
+    --linkColor: #6eb8ff;
+    --borderColor: #414141;
+  }
+}
+
+body,
+button,
+textarea,
+input {
+  font-family: system-ui, sans-serif;
+  color: var(--textColor);
+}
+
+body {
+  font-size: 16px;
+  margin: 2.5em;
+  padding: 0;
+  background: var(--backgroundColor);
+  line-height: 1.7em;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
+
+a { 
+  color: var(--linkColor);
+}
+
+footer,
+header {
+  margin: 1em 0;
+}
+
+footer,
+header,
+main {
+  width: 100%;
+  max-width: 36em;
+}
+
+label {
+  display: block;
+}
+
+textarea,
+input {
+  margin: 0.4em 0;
+  padding: 0.8em;
+  background: var(--subtleBackgroundColor);
+  border: 0;
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 1em 0;
+}
+
+button, .button {
+  padding: 0.8em 1.6em;
+  background: var(--subtleBackgroundColor);
+  border: 0;
+  font-weight: 600;
+  cursor: pointer;
+  border-radius: 2px;
+}
+
+button[type="submit"], .button\:type-submit {
+  background: var(--linkColor);
+  color: var(--backgroundColor);
+}
+
+code, pre, .code {
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;  
+  font-size: 0.9em;
+}
+
+em {
+  color: var(--mutedTextColor);
+}
+
+blockquote {
+  background-color: var(--subtleBackgroundColor);
+  padding: 1em 1em 1em 2.5em;
+  margin: 0;
+}
+
+pre {
+  border: 1px solid var(--borderColor);
+  overflow: auto;
+  padding: 0.4em 0.8em;
+}
