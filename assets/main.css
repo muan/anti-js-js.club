@@ -36,7 +36,7 @@ body {
   margin: 2.5em;
   padding: 0;
   background: var(--backgroundColor);
-  line-height: 1.7em;
+  line-height: 1.6em;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -61,7 +61,7 @@ label {
 
 textarea,
 input {
-  margin: 0.4em 0;
+  margin: 0.6em 0;
   padding: 0.8em;
   background: var(--subtleBackgroundColor);
   border: 0;
@@ -98,12 +98,13 @@ em {
 
 blockquote {
   background-color: var(--subtleBackgroundColor);
-  padding: 1em 1em 1em 2.5em;
-  margin: 0;
+  padding: 0.6em 1.2em;
+  border-radius: 0.6em;
+  margin: 0 0 0.6em;
 }
 
 pre {
   border: 1px solid var(--borderColor);
   overflow: auto;
-  padding: 0.4em 0.8em;
+  padding: 0.6em 1.2em;
 }
