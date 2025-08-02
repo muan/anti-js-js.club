@@ -1,0 +1,23 @@
+{
+  "name": "anti-js-js.club",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/muan/anti-js-js.club.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/muan/anti-js-js.club/issues"
+  },
+  "homepage": "https://github.com/muan/anti-js-js.club#readme",
+  "dependencies": {
+    "eleventy": "^1.0.7"
+  }
+}
