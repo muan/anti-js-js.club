@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build-ghpages": "npx @11ty/eleventy --pathprefix=/anti-js-js.club/"
   },
   "repository": {
     "type": "git",
