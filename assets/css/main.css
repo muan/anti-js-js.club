@@ -1,0 +1,148 @@
+:root {
+  --bglv0: #eeeeee;
+  --bglv1: #e0e9e2;
+  --fglv0: #171717;
+  --fglv1: #303030;
+  --fglv2: #454748;
+  --fglv3: #746f6f;
+  --fglv4: #a49e9e;
+  --fglink: #143cb5;
+  --fgaccent: #f26960;
+  --borderColor: #b3b5b9;
+  --radii: 4px;
+}
+
+/* Support iOS dynamic type */
+@supports (-webkit-touch-callout: none) {
+  :root {
+    font: -apple-system-body;
+  }
+}
+
+html {
+  font-size: 16px;
+}
+
+body,
+button,
+textarea,
+input {
+  /* font-family: system-ui, sans-serif; */
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;  
+  color: var(--fglv1);
+}
+
+div, summary, a {
+  box-sizing: border-box;
+}
+
+select,
+button {
+  box-sizing: border-box;
+}
+
+body {
+  word-wrap: break-word;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bglv0);
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: bold;
+}
+
+a { 
+  text-underline-offset: 0.2em;
+  color: var(--fglink);
+}
+
+footer,
+main,
+header {
+  padding: 2.4em;
+  max-width: 50em;
+  margin: auto;
+}
+
+header { margin-top: 1.2em }
+
+footer {
+  margin-top: 12em;
+  margin-bottom: 12em;
+}
+
+label {
+  display: block;
+}
+
+textarea,
+select,
+input,
+button {
+  font-size: inherit;
+  border-radius: var(--radii);
+  padding: 16px; 
+  border-radius: 0;
+  background: var(--bglv0);
+  border: 0.5px solid var(--borderColor);
+  box-shadow: 1px 1px 0 0px var(--bglv0);
+  transform: scale(1, 0.97);
+  color: var(--fglv1);
+  letter-spacing: 1px;
+}
+
+*::placeholder {
+  color: var(--fglv3);
+}
+
+fieldset {
+  border: 0;
+  padding: 0;
+  margin: 1em 0;
+}
+
+button, .button {
+  padding: 1em 1.5em;
+  line-height: 1;
+  font-size: inherit;
+  background: var(--bglv1);
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 1px 1px 0 0px var(--bglv0);
+}
+
+button:focus, .button:focus, select:focus, input:focus {
+  box-shadow: none;
+}
+
+select:disabled {
+  opacity: 0.7;
+}
+
+a.button {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+}
+
+button[type="submit"], .button\:type-submit {
+  background: var(--bglv2);
+}
+
+code, pre, .code {
+  font-family: ui-monospace, "SFMono-Regular", "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;  
+  font-size: 0.95em;
+}
+
+em, i {
+  color: var(--fglv2);
+  font-style: normal;
+}
+
+blockquote {
+  border-left: 2px solid var(--fgaccent);
+  margin-left: 0;
+  padding-left: 2em;
+}
